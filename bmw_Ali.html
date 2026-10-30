@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contactformulier</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+    </head>
+
+    <body>
+        <div id="pag1" data-role="page" data-theme="b">
+            <div data-role="header">
+            <h1>BMW</h1>
+            </div>
+
+            <div role="main" class="ui-content">
+            <h1>Uw gegevens</h1>
+                <div class="ui-field-contain">
+                    <label for="naam">Uw naam:</label>
+                    <input type="text" id="naam" placeholder="Naam van aanbieder" />
+
+                    <label for="tussenvoegsel">Tussenvoegsel:</label>
+                    <input type="text" id="tussenvoegsel" placeholder="Tussenvoegsel" />
+
+                    <label for="achternaam">Uw achternaam:</label>
+                    <input type="text" id="achternaam" placeholder="Achternaam van aanbieder" />
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <select name="model" id="model" data-native-menu="false" data-mini="false">
+                        <option value="">Kies BMW model:</option>
+                        <option value="1">BMW M4</option>
+                        <option value="2">BMW i350</option>
+                        <option value="3">BMW 3 Serie</option>
+                        <option value="4">BMW M Series</option>
+                    </select>
+
+                    <br>
+
+                    <h1 class="">Carrosserie</h1>
+                    <div class="ui-field-contain">
+                        
+                        <input type="radio" name="carrosserie" id="Sedan" value="Sedan" />
+                        <label for="Sedan">Sedan</label>
+
+                        <input type="radio" name="carrosserie" id="Hatchback" value="Hatchback" />
+                        <label for="Hatchback">Hatchback</label>
+
+                        <input type="radio" name="carrosserie" id="Coupe" value="Coupe" />
+                        <label for="Coupe">Coupe</label>
+
+                        <input type="radio" name="carrosserie" id="Convertible" value="Convertible" />
+                        <label for="Convertible">Convertible</label>
+                    </div>
+
+                    <h1 class="">Type brandstof</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Brandstof:</legend>
+                        <input type="radio" name="brandstof" id="benzine" value="benzine">
+                        <label for="benzine">Benzine</label>
+                        <input type="radio" name="brandstof" id="diesel" value="diesel">
+                        <label for="diesel">Diesel</label>
+                    </fieldset>
+                        
+                    <h1>bouwjaar</h1>
+                    <select name="bouwjaar" id="bouwjaar" data-native-menu="false" data-mini="false">
+                        <option value="1">2000</option>
+                        <option value="2">2001</option>
+                        <option value="3">2002</option>
+                        <option value="4">2003</option>
+                        <option value="5">2004</option>
+                        <option value="6">2005</option>
+                        <option value="7">2006</option>
+                        <option value="8">2007</option>
+                        <option value="9">2008</option>
+                        <option value="10">2009</option>
+                        <option value="11">2010</option>
+                        <option value="12">2011</option>
+                        <option value="13">2012</option>
+                        <option value="14">2013</option>
+                        <option value="15">2014</option>
+                        <option value="16">2015</option>
+                        <option value="17">2016</option>
+                        <option value="18">2017</option>
+                        <option value="19">2018</option>
+                        <option value="20">2019</option>
+                    </select>
+
+                    <div class="km-teller">
+                        <h1>Rijksweidte</h1>
+                        <p>aantal kilometers op teller:</p>
+                        <input name="beoordeling" id="beoordeling" type="range" min="0" max="10000" step="200" value="0" data-highlight="true" data-mini="true">
+                    </div>
+
+                    <h1>kleur</h1>
+                    <div class="kleur">
+                        <input type="radio" name="kleur" id="wit" value="wit">
+                        <label for="wit">Wit</label>
+                        <input type="radio" name="kleur" id="grijs" value="grijs">
+                        <label for="grijs">Grijs</label>
+                        <input type="radio" name="kleur" id="zwart" value="zwart">
+                        <label for="zwart">Zwart</label>
+                        <input type="radio" name="kleur" id="rood" value="rood">
+                        <label for="rood">Rood</label>
+                        <input type="radio" name="kleur" id="blauw" value="blauw">
+                        <label for="blauw">Blauw</label>
+                        <input type="radio" name="kleur" id="groen" value="groen">
+                        <label for="groen">Groen</label>
+                        <input type="radio" name="kleur" id="geel" value="geel">
+                        <label for="geel">Geel</label>
+                    </div>
+
+                    <h1>Extra opties</h1>
+                    <select name="extras" id="extras" multiple="multiple" data-native-menu="false" data-mini="false">
+                        <option value="1">LM - velgen</option>
+                        <option value="2">metallic lak</option>
+                        <option value="3">Navigatie</option>
+                        <option value="4">Radar</option>
+                    </select>
+
+                    <h1>vraagprijs</h1>
+                    <input type="text" id="vraagprijs" placeholder="vraagprijs" />
+
+                    <h1>
+                        <button type="submit" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Verzenden</button>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

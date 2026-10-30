@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brood en Banket</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+    
+    .ui-bar {padding:0px;}
+    .ui-body {opacity: 0.75;}
+    </style>
+
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>Brood en Banket</h1>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <img src="bakkerij.png" alt="Onze bakkerij" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;"> <!-- dit is om het in het midden te zetten de foto! -->
+        
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#brood" class="ui-btn ui-corner-all ui-shadow">Ons Brood</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#banket" class="ui-btn ui-corner-all ui-shadow">Ons Banket</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui-bar ui-bar-a ui-footer ui-footer-fixed slideup ui-bar-inherit" data-role="footer" data-position="fixed" role="contentinfo" style="left:0;">
+        <div data-role="navbar" class="ui-navbar" role="navigation">
+            <ul class="ui-grid-b" style="left:0;">
+                <li class="ui-block-a"><a href="#contact" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">contact</a></li>
+                <li class="ui-block-b"><a href="#weekaanbiedingen" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">weekaanbiedingen</a></li>
+                <li class="ui-block-c"><a href="#verjaardagstaarten" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">verjaardagstaarten</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Brood bladzijde i -->
+<div data-role="page" id="brood" data-title="Ons Brood">
+    <div data-role="header">
+        <h1>Ons Heerlijke Brood</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Terug</a>
+    </div>
+    <!-- ik heb eigenlijk een soort van icon gevonden en die icon had ik hier vemeld door een btn tag daarna verronden met de icon tag en dan de icon home gevonden tag en daar heb ik het icon uitgehaald. -->
+    <div role="main" class="ui-content">
+        <img src="brood.jpg" alt="Vers brood" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;">
+        
+        <p>Wij bakken dagelijks vers brood met de beste ingrediÃ«nten. Onze specialiteiten:</p>
+        <br>
+        <ul data-role="listview">
+            <li>Volkoren brood - gemaakt van 100% volkorenmeel</li>
+            <li>Wit brood - luchtig en zacht</li>
+            <li>Zuurdesem - traditioneel lang gerezen</li>
+            <li>Meergranen - met diverse zaden en pitten</li>
+        </ul>
+        <br>
+        <p> Bekijk hieronder nog een lijst met de <u>ingrediÃ«nten</u> die je kan toevoegen: </p>
+        <br>
+        
+        <div data-role="collapsible" data-theme="false" data-content-theme="false">
+                    <h4>Soorten meel voor brood</h4>
+                    <ul data-role="listview" class="ui-li-has-thumb ui-first-child">
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img src="volkorenmeel.jpg" alt="Vers brood" style="max-width:10%;height:auto;margin-left: auto; margin-right: auto;">
+                            <h1>Volkorenmeel</h1>
+                            <p>Oude klassieker, bevat hele graankorrel.</p>
+                            
+                        </a>
+                        <a href="#pagina2"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Zuurdesem</h1>
+                            <p>Volgens oma's recept, lekker deeg.</p>
+                            
+                        </a>
+                        <a href="#pagina3"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Speltmeel</h1>
+                            <p>Lichter verteerbaar dan tarwe, nootachtige smaak.</p>
+                            
+                        </a>
+                        <a href="#pagina4"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Roggemeel</h1>
+                            <p>Gebruikt in stevig brood zoals Duits roggebrood.</p>
+                            
+                        </a>
+                        <a href="#pagina5"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Maismeel</h1>
+                            <p>Geel van kleur, zoetere smaak.</p>
+                            
+                        </a>
+                    </ul>
+        </div>
+        <br>
+        <div data-role="collapsible" data-theme="false" data-content-theme="false">
+                    <h4>Soorten vullingen voor brood</h4>
+                    <ul data-role="listview" class="ui-li-has-thumb ui-first-child">
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Vanille</h1>
+                            <p>Een zachte en warme klassieker</p>
+                            
+                        </a>
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Kaneel</h1>
+                            <p>Rijk en kruidig met een tikje warmte</p>
+                            
+                        </a>
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Appel</h1>
+                            <p>Fris, sappig en lichtzoet</p>
+                            
+                        </a>
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Rozijnen</h1>
+                            <p>Licht chewy en subtiel zoet</p>
+                            
+                        </a>
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Pistache</h1>
+                            <p>Nootachtige en zoet</p>
+                        </a>
+                        <a href="#pagina1"class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                            <img>
+                            <h1>Chocolade</h1>
+                            <p>Romig, intens en een beetje ondeugend</p>
+                        </a>
+                    </ul>
+        </div>
+    </div>
+    
+    <div data-role="footer"> <!-- hier staat de footer en de brood eind info -->
+        <h4>Brood en Banket</h4>
+    </div>
+</div>
+
+<!-- Banket bladzijde i -->
+<div data-role="page" id="banket" data-title="Ons Banket">
+    <div data-role="header">
+        <h1>Ons Heerlijke Banket</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Terug</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <img src="banket.png" alt="Banket" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;">
+        
+        <p>Ons banket wordt met zorg en aandacht gemaakt. Onze specialiteiten:</p>
+        <ul data-role="listview">
+            <li>Appeltaart - bron vol met kaneel</li>
+            <li>Chocoladecake - van de beste chocolade</li>
+            <li>Tompouce - klassieke Hollandse lekkernij</li>
+            <li>Bossche bollen - hartig en luchtig</li>
+            <li>Koekjes - verschillende soorten</li>
+            <li>Gebak - zoet en lekker</li>
+        </ul>
+    </div>
+    
+    <div data-role="footer"> <!-- hier staat de footer en de brood eind info -->
+        <h4>Brood en Banket</h4>
+    </div>
+</div>
+
+<!-- Banket bladzijde i -->
+<div data-role="page" id="pagina1" data-title="Volkorenmeel">
+    <div data-role="header">
+        <h1>Over het volkorenmeel</h1>
+        <a href="#brood" class="ui-btn ui-icon-back ui-btn-icon-left">Terug</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        
+        <h1> Over ons volkorenmeel </h1>
+        
+        <p>Volkorenmeel is gemaakt van de hele graankorrel, dus niet alleen het binnenste (zoals bij bloem), maar ook de zemel (de buitenkant) en de kiem (het voedingsrijke hartje). Daardoor behoudt het alle vezels, vitamines, mineralen Ã©n die ruige, no-nonsense smaak.</p>
+        <img src="volkorenmeel.png" alt="Banket" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;">
+        <p> <i> ons meel is vers en nieuw, het wordt elke week verversd en is compleet door onze boeren geoogst. </i></p>
+        <p> Meel is een belangrijke stof voor onze lichaam, het bevat veel carbs en heeft veel calorieen voor de <b>groei.</b></p>
+        <br>
+    </div>
+    
+    <div data-role="footer"> <!-- hier staat de footer en de brood eind info -->
+        <h4>Brood en Banket</h4>
+    </div>
+</div>
+
+
+<!-- contact -->
+<div data-role="page" id="contact">
+    <div data-role="header">
+        <h1>contact</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Terug</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <img src="contact.png" alt="Onze bakkerij" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;"> <!-- dit is om het in het midden te zetten de foto! -->
+        
+        <p style="text-align: center;">
+            <b>Brood en Banket</b>
+            <br>
+            <b>Adres: Brood en Banketstraat 1</b> 
+            <br>
+            <b>Telefoonnummer: +31612345678</b>
+            <br>
+            <b>Email: VtI4o@example.com</b>
+            <br>
+        </p>
+    </div>
+    
+    <div class="ui-bar ui-bar-a ui-footer ui-footer-fixed slideup ui-bar-inherit" data-role="footer" data-position="fixed" role="contentinfo" style="left:0;">
+        <div data-role="navbar" class="ui-navbar" role="navigation">
+            <ul class="ui-grid-b" style="left:0;">
+                <li class="ui-block-a"><a href="#contact" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">contact</a></li>
+                <li class="ui-block-b"><a href="#weekaanbiedingen" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-left">weekaanbiedingen</a></li>
+                <li class="ui-block-c"><a href="#verjaardagstaarten" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">verjaardagstaarten</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<!-- contact einde -->
+
+<!-- verjaardagstaarten -->
+<div data-role="page" id="verjaardagstaarten">
+    <div data-role="header">
+        <h1>verjaardagstaarten</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Terug</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <img src="verjaardagstaarten.png" alt="Onze bakkerij" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;"> <!-- dit is om het in het midden te zetten de foto! -->
+        
+        <H1>
+            <p><b>hieronder onze assortiment:</b></p>
+            <ul>
+                <li>1. verjaardagstaarten</li>
+                <li>2. verjaardagstaarten</li>
+                <li>3. verjaardagstaarten</li>
+                <li>4. verjaardagstaarten</li>
+                <li>5. verjaardagstaarten</li>
+            </ul>
+        </H1>
+        
+    </div>
+    
+    <div class="ui-bar ui-bar-a ui-footer ui-footer-fixed slideup ui-bar-inherit" data-role="footer" data-position="fixed" role="contentinfo" style="left:0;">
+        <div data-role="navbar" class="ui-navbar" role="navigation">
+            <ul class="ui-grid-b" style="left:0;">
+                <li class="ui-block-a"><a href="#contact" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">contact</a></li>
+                <li class="ui-block-b"><a href="#weekaanbiedingen" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-left">weekaanbiedingen</a></li>
+                <li class="ui-block-c"><a href="#verjaardagstaarten" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">verjaardagstaarten</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<!-- verjaardagstaarten einde -->
+
+<!-- weekaanbiedingen -->
+<div data-role="page" id="weekaanbiedingen">
+    <div data-role="header">
+        <h1>weekaanbiedingen</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Terug</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <img src="weekaanbiedingen.png" alt="Onze bakkerij" style="display: block;max-width:100%;height:auto;margin-left: auto; margin-right: auto;"> <!-- dit is om het in het midden te zetten de foto! -->
+        
+        <h1>
+            weekaanbiedingen
+        </h1>
+        <p>1. weekaanbiedingen</p>
+        <p>2. weekaanbiedingen</p>
+        <p>3. weekaanbiedingen</p>
+        <p>4. weekaanbiedingen</p>
+    </div>
+    
+    <div class="ui-bar ui-bar-a ui-footer ui-footer-fixed slideup ui-bar-inherit" data-role="footer" data-position="fixed" role="contentinfo" style="left:0;">
+        <div data-role="navbar" class="ui-navbar" role="navigation">
+            <ul class="ui-grid-b" style="left:0;"> 
+                <li class="ui-block-a"><a href="#contact" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">contact</a></li>
+                <li class="ui-block-b"><a href="#weekaanbiedingen" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-left">weekaanbiedingen</a></li>
+                <li class="ui-block-c"><a href="#verjaardagstaarten" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">verjaardagstaarten</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<!-- wekaanbiedingen einde -->
+
+
+
+<!-- copyright van ali. ik ben hier de meester van deze meesterwerk! -->
+</body>
+</html>
